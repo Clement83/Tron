@@ -55,7 +55,7 @@ void ia(Snake *play)
   boolean isOk = false;
   uint8_t forceSortie = 0;
   
-  if(random(0,60) == 0)
+  if(random(0,40) == 0)
   {
      play->dir = allDir[random(0,4)];
   }
@@ -80,10 +80,9 @@ void ia(Snake *play)
     else {
       play->dir = allDir[random(0,4)];
     }
-  }while(!isOk && forceSortie++<5);
+  }while(!isOk && forceSortie++<10);
     
 }
-
 
 void movePlayerSlave()
 {
